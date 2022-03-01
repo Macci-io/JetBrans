@@ -1,0 +1,60 @@
+body {
+    height: 100%;
+    background: brown no-repeat center top;
+    background-size: 100%;
+
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 150px;
+    height: 17em;
+}
+
+.wkey {
+    height: 100%;
+    width: 6em;
+    display: inline-block;
+    text-align: center;
+    box-sizing: border-box;
+    border: 2px black solid;
+    box-shadow: inset -2px -2px 5px black;
+    color: black;
+    border-radius: 0 0 5px 5px;
+    background: white;
+    user-select: none;
+    padding-top: 250px;
+    font-family: cursive;
+    font-weight: bold;
+    margin: -4px;
+}
+.bkey {
+    height: 4em;
+    display: inline-block;
+    width: 4em;
+    border: 2px black solid;
+    text-align: center;
+    padding-top: 150px;
+    background: black;
+    color: white;
+    box-shadow: inset -2px -2px 5px gray;
+    margin-bottom: 70px;
+    border-radius: 0 0 5px 5px;
+}
+
+.white-keys {
+   z-index: -1;
+    display: inline-block;
+}
+
+.black-keys {
+    display: inline-block;
+    position: absolute;
+    z-index: 2;
+
+}
+.wkey.active {
+    background: #ccc;
+}
