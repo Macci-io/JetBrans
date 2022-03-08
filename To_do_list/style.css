@@ -1,0 +1,125 @@
+
+*, *::before, *::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 450px;
+    height: 100vh;
+    margin: 0;
+    background-color: #e2d5de;
+}
+
+h1 {
+    color: skyblue;
+    border-style: solid;
+}
+li button input span {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+.main {
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    tranform: translate(-80%, -50%);
+    width: 350px;
+    height: 500px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 7px 30px rgba(62, 9, 11, .3);
+}
+
+.cover-img {
+    background: url("https://images.pexels.com/photos/5775309/pexels-photo-5775309.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+    height: 190px;
+    background-size: cover;
+    background-position: 10% 20%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+}
+.cover-img h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.task-space {
+    padding: 10px 20px;
+    border-bottom: 1px solid #8e979c;
+}
+.task-space form{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 0 20px 0 50px;
+}
+
+
+#input-task {
+    padding: 0 5px;
+    font-weight: 700;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+}
+
+
+#add-task-button {
+    font-size: 1rem;
+    font-weight: 5rem;
+    position: center;
+    transform: translate(70%);
+    padding: 1px 6px 1px 10px;
+    background: rgb(0, 255, 0);
+    cursor: pointer;
+}
+
+#task-space {
+    margin-left: 0;
+    padding: 0;
+    letter-spacing: none;
+    height: 220px;
+    overflow: auto;
+    border-bottom: 1px solid;
+}
+
+.task-lists li {
+    user-select: none;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    transform: translate(-5%, -5%);
+}
+
+.task-lists li button {
+    margin-top: 5px;
+    font-size: 0.5rem;
+    cursor: pointer;
+    padding: 5px 10px;
+    background: rgb(255, 0, 0);
+}
+
+.task-lists {
+    margin-top: 40px;
+}
+
+
+
+
+.todo-item {
+    list-style-type: none;
+}
+
+.checked {
+    text-decoration: line-through;
+}
